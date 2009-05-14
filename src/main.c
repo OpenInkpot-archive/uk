@@ -78,11 +78,7 @@ void key_pressed(const config_t* config, int keysym)
         return;
     }
 
-    /* Message: keysym */
-    char buf[8];
-    snprintf(buf, 8, "%d", keysym);
-
-    if(-1 == lwrite(f, buf, strlen(buf)))
+    if(-1 == lwrite(f, key->app_action, strlen(key->app_action)))
     {
         close(f);
         return;

@@ -5,6 +5,7 @@ typedef struct
 {
     int keysym;
     char* app_service;
+    char* app_action;
     char* app_cmdline;
 } hotkey_t;
 
