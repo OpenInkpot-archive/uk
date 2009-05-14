@@ -19,3 +19,4 @@ missing
 src/uk
 *.o
 stamp-h1
+doc/sampleclient
