@@ -23,6 +23,16 @@ static int handle_keypress(void* param, xcb_connection_t* c,
     return 1;
 }
 
+/*
+ * This is necessary to avoid crash in xcb_event (calling through uninitialized
+ * pointer). Should be fixed in xcb-event 0.3.5.
+ */
+static int handle_keyrelease(void* param, xcb_connection_t* c,
+                             xcb_key_release_event_t* event)
+{
+    return 1;
+}
+
 int run(config_t* config, key_handler_t key_handler)
 {
     int default_screen;
@@ -46,6 +56,7 @@ int run(config_t* config, key_handler_t key_handler)
     xcb_event_handlers_t eh;
     xcb_event_handlers_init(c, &eh);
     xcb_event_set_key_press_handler(&eh, handle_keypress, &context);
+    xcb_event_set_key_release_handler(&eh, handle_keyrelease, &context);
 
     xcb_void_cookie_t* cookies = alloca(sizeof(xcb_void_cookie_t)
                                              * config->count);
