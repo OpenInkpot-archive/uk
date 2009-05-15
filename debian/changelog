@@ -1,3 +1,10 @@
+uk (0.1-2) asimov; urgency=low
+
+  * Fixed autogen.sh to do not use libtoolize.
+  * Added missing pkg-config build-dependency.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Fri, 15 May 2009 23:20:33 +0700
+
 uk (0.1-1) asimov; urgency=low
 
   * Initial release.
