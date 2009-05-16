@@ -1,3 +1,10 @@
+uk (0.1-4) asimov; urgency=low
+
+  * Redone workaround from 0.1-3 to avoid all unhandled events, not only
+    key_release.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Sat, 16 May 2009 15:16:21 +0700
+
 uk (0.1-3) asimov; urgency=low
 
   * Fixed crash on 32-bit systems due to uninitialized pointer in
