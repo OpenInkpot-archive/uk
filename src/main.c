@@ -45,7 +45,7 @@ void key_pressed(const config_t* config, int keysym)
 
     /* FIXME: UGLY */
     int f = connect_service(key->app_service);
-    if(f == -1 && errno == ECONNREFUSED)
+    if(f == -1 && (errno == ECONNREFUSED || errno == ENOENT))
     {
         start_app(key);
 
