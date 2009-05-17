@@ -56,13 +56,13 @@ void key_pressed(const config_t* config, int keysym)
         for(i = 0; i < 1000; ++i)
         {
             f = connect_service(key->app_service);
-            if(f != -1 || errno != ECONNREFUSED)
+            if(f != -1 || (errno != ECONNREFUSED && errno != ENOENT))
                 break;
 
             poll(fds, 0, 10);
         }
 
-        if(f == -1 && errno == ECONNREFUSED)
+        if(f == -1 && (errno == ECONNREFUSED || errno == ENOENT))
         {
             fprintf(stderr, "ERROR: spawned %s did not setup serivce %s\n",
                     key->app_cmdline, key->app_service);
