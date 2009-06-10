@@ -15,3 +15,14 @@ Description: micro-implementation of hotkeys for X
  uKeys is a small hotkeying application for X, with additional
  "dbus-services-like" functionality, allowing to signal running applications
  instead of running them second time.
+
+Package: uk-send
+Priority: optional
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: uk-send is small tool to simulate uk events from commandline
+ uKeys is a small hotkeying application for X, with additional
+ "dbus-services-like" functionality, allowing to signal running applications
+ instead of running them second time.
+ .
+ uk-send is small tool to simulate uKeys events from commandline
