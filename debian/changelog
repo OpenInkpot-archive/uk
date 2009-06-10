@@ -1,3 +1,9 @@
+uk (0.1-7) asimov; urgency=low
+
+  * Added uk-send utility.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Wed, 10 Jun 2009 23:01:00 +0700
+
 uk (0.1-6) asimov; urgency=low
 
   * Added proper check for ENOENT while opening service socket.
