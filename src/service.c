@@ -22,7 +22,10 @@ char* service_path(const char* name, int port)
     if(!user)
         user = getenv("LOGNAME");
     if(!user)
+    {
+        errno = EINVAL;
         return NULL;
+    }
 
     char* ret;
     if(-1 == asprintf(&ret, "/tmp/.ecore_service-%s/%s/%d", user, name, port))
