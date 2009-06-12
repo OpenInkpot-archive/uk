@@ -1,3 +1,10 @@
+uk (0.1-8) asimov; urgency=low
+
+  * Better error reporting if $ENV{'HOME'} and $ENV{'LOGNAME'} do not exist.
+  * Memory leak in connect_service plugged
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Fri, 12 Jun 2009 17:17:25 +0700
+
 uk (0.1-7) asimov; urgency=low
 
   * Added uk-send utility.
