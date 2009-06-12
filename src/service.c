@@ -47,6 +47,8 @@ int connect_service(const char* name)
    struct sockaddr_un addr = { AF_UNIX };
    strncpy(addr.sun_path, path, UNIX_PATH_MAX - 1);
 
+   free(path);
+
    if(-1 == connect(s, (struct sockaddr*)&addr, sizeof(addr)))
    {
        int saved_errno = errno;
