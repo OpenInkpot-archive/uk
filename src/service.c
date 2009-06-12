@@ -36,12 +36,12 @@ char* service_path(const char* name, int port)
 
 int connect_service(const char* name)
 {
-   char* path = service_path(name, 0);
-   if(!path)
-       return -1;
-
    int s = socket(AF_UNIX, SOCK_STREAM, 0);
    if(s == -1)
+       return -1;
+
+   char* path = service_path(name, 0);
+   if(!path)
        return -1;
 
    struct sockaddr_un addr = { AF_UNIX };
