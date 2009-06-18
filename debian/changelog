@@ -1,3 +1,9 @@
+uk (0.1-9) asimov; urgency=low
+
+  * Xsession.d snippet added.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Thu, 18 Jun 2009 12:24:01 +0700
+
 uk (0.1-8) asimov; urgency=low
 
   * Better error reporting if $ENV{'HOME'} and $ENV{'LOGNAME'} do not exist.
