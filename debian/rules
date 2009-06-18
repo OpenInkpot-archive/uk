@@ -43,6 +43,8 @@ install: build
 	dh_installdirs
 
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	mkdir -p $(CURDIR)/debian/tmp/etc/X11/Xsession.d
+	cp debian/50uk $(CURDIR)/debian/tmp/etc/X11/Xsession.d
 
 binary-indep:
 
