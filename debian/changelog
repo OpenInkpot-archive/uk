@@ -1,3 +1,9 @@
+uk (0.1-10) asimov; urgency=low
+
+  * Unbreak uk-send return codes (0 means success).
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Tue, 25 Aug 2009 18:14:18 +0700
+
 uk (0.1-9) asimov; urgency=low
 
   * Xsession.d snippet added.
