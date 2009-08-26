@@ -58,7 +58,7 @@ int run(config_t* config, key_handler_t key_handler)
     int i;
     for(i = 0; i < config->count; ++i)
         cookies[i] = xcb_grab_key(c, true, screen->root,
-                                  /*config->keys[i].is_alt ? XCB_MOD_MASK_1 : 0 */ XCB_MOD_MASK_ANY,
+                                  config->keys[i].is_alt ? XCB_MOD_MASK_1 : 0,
                                   config->keys[i].keysym, XCB_GRAB_MODE_ASYNC,
                                   XCB_GRAB_MODE_ASYNC);
 
