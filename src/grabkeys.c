@@ -20,7 +20,8 @@ static int handle_keypress(void* param, xcb_connection_t* c,
                            xcb_key_press_event_t* event)
 {
     context_t* context = param;
-    (*context->key_handler)(context->config, event->detail);
+    (*context->key_handler)(context->config, event->detail,
+                            event->state & XCB_MOD_MASK_1);
     return 1;
 }
 
@@ -56,7 +57,8 @@ int run(config_t* config, key_handler_t key_handler)
 
     int i;
     for(i = 0; i < config->count; ++i)
-        cookies[i] = xcb_grab_key(c, true, screen->root, XCB_BUTTON_MASK_ANY,
+        cookies[i] = xcb_grab_key(c, true, screen->root,
+                                  /*config->keys[i].is_alt ? XCB_MOD_MASK_1 : 0 */ XCB_MOD_MASK_ANY,
                                   config->keys[i].keysym, XCB_GRAB_MODE_ASYNC,
                                   XCB_GRAB_MODE_ASYNC);
 

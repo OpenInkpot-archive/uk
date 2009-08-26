@@ -31,9 +31,9 @@ void start_app(hotkey_t* key)
     }
 }
 
-void key_pressed(const config_t* config, int keysym)
+void key_pressed(const config_t* config, int keysym, bool is_alt)
 {
-    hotkey_t* key = lookup_key(config, keysym);
+    hotkey_t* key = lookup_key(config, keysym, is_alt);
     if(!key)
         return;
 
