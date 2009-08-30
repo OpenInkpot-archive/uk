@@ -24,7 +24,7 @@ int main(int argc, char** argv)
         return 2;
     };
 
-    if(0 != lwrite(sock, argv[2], strlen(argv[2])))
+    if(lwrite(sock, argv[2], strlen(argv[2])) < 0)
     {
         perror("uk-send: lwrite");
         return 1;
