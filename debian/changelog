@@ -1,3 +1,9 @@
+uk (0.1-12) asimov; urgency=low
+
+  * Fix uk-send return code: error in lwrite return code checking.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Mon, 31 Aug 2009 06:35:40 +0700
+
 uk (0.1-11) asimov; urgency=low
 
   * Add Alt-<keysym> handling.
