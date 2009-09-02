@@ -1,3 +1,12 @@
+uk (0.1-13) asimov; urgency=low
+
+  * Adjust source code and packaging to new liblops.
+  * Remove useless config.h.in
+  * Bump Standards-Version
+  * Avoid linking uk-send with xcb
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Thu, 03 Sep 2009 06:39:32 +0700
+
 uk (0.1-12) asimov; urgency=low
 
   * Fix uk-send return code: error in lwrite return code checking.
