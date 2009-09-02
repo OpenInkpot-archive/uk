@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 7), automake, pkg-config, liblops-dev, libxcb1-dev,
 XCS-Cross-Host-Build-Depends: debhelper (>= 7), automake, pkg-config
 XCS-Cross-Build-Depends: liblops-dev, libxcb1-dev, libxcb-event1-dev, libxcb-aux0-dev
 Priority: optional
-Standards-Version: 3.8.0
+Standards-Version: 3.8.3
 
 Package: uk
 Priority: optional
