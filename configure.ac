@@ -9,6 +9,6 @@ AC_PROG_CC
 
 PKG_CHECK_MODULES(XCB,[xcb])
 PKG_CHECK_MODULES(XCB_UTIL,[xcb-event xcb-aux])
-PKG_CHECK_MODULES(LOPS, [lops])
+PKG_CHECK_MODULES(LIBLOPS, [liblops])
 
 AC_OUTPUT(Makefile src/Makefile)

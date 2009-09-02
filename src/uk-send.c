@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
+
+#include <liblops.h>
+
 #include "service.h"
-#include "lops.h"
+
 
 void usage()
 {
@@ -24,9 +27,9 @@ int main(int argc, char** argv)
         return 2;
     };
 
-    if(lwrite(sock, argv[2], strlen(argv[2])) < 0)
+    if(writen(sock, argv[2], strlen(argv[2])) < 0)
     {
-        perror("uk-send: lwrite");
+        perror("uk-send: writen");
         return 1;
     }
 

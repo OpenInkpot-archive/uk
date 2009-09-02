@@ -1,6 +1,5 @@
 #include "conffile.h"
 #include "service.h"
-#include "lops.h"
 #include "grabkeys.h"
 
 #include <poll.h>
@@ -10,6 +9,8 @@
 #include <errno.h>
 #include <stdio.h>
 #include <unistd.h>
+
+#include <liblops.h>
 
 void start_app(hotkey_t* key)
 {
@@ -78,7 +79,7 @@ void key_pressed(const config_t* config, int keysym, bool is_alt)
         return;
     }
 
-    if(-1 == lwrite(f, key->app_action, strlen(key->app_action)))
+    if(-1 == writen(f, key->app_action, strlen(key->app_action)))
     {
         close(f);
         return;
