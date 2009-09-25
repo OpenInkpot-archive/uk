@@ -1,3 +1,9 @@
+uk (0.1-14) asimov; urgency=low
+
+  * Add uk-settings-* settings packages (moved from oi-build-firmware).
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Fri, 25 Sep 2009 20:26:40 +0700
+
 uk (0.1-13) asimov; urgency=low
 
   * Adjust source code and packaging to new liblops.
