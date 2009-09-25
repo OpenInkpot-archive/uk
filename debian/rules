@@ -46,7 +46,19 @@ install: build
 	mkdir -p $(CURDIR)/debian/tmp/etc/X11/Xsession.d
 	cp debian/50uk $(CURDIR)/debian/tmp/etc/X11/Xsession.d
 
-binary-indep:
+	for i in v3 n516; do \
+		mkdir -p $(CURDIR)/debian/uk-settings-$$i/etc; \
+		cp $(CURDIR)/debian/$$i.conf $(CURDIR)/debian/uk-settings-$$i/etc/uk.conf; \
+	done
+
+binary-indep: install
+	dh_testdir
+	dh_testroot
+
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_gencontrol -i
+	dh_builddeb -i
 
 binary-arch: install
 	dh_testdir
@@ -61,7 +73,6 @@ binary-arch: install
 	dh_installdeb -s
 	dh_shlibdeps -s
 	dh_gencontrol -s
-	dh_md5sums -s
 	dh_builddeb -s
 
 binary: binary-indep binary-arch

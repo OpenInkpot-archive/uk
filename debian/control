@@ -26,3 +26,23 @@ Description: uk-send is small tool to simulate uk events from commandline
  instead of running them second time.
  .
  uk-send is small tool to simulate uKeys events from commandline
+
+Package: uk-settings-v3
+Priority: optional
+Architecture: all
+Description: micro-implementation of hotkeys for X -- Hanlin V3 keybindings
+ uKeys is a small hotkeying application for X, with additional
+ "dbus-services-like" functionality, allowing to signal running applications
+ instead of running them second time.
+ .
+ This package contains default keybindings for Hanlin V3.
+
+Package: uk-settings-n516
+Priority: optional
+Architecture: all
+Description: micro-implementation of hotkeys for X -- Hanvon N516 keybindings
+ uKeys is a small hotkeying application for X, with additional
+ "dbus-services-like" functionality, allowing to signal running applications
+ instead of running them second time.
+ .
+ This package contains default keybindings for Hanvon N516.
