@@ -1,3 +1,9 @@
+uk (0.1-15) asimov; urgency=low
+
+  * Add madaudio hotkey for N516.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Thu, 01 Oct 2009 03:48:15 +0700
+
 uk (0.1-14) asimov; urgency=low
 
   * Add uk-settings-* settings packages (moved from oi-build-firmware).
