@@ -1,3 +1,9 @@
+uk (0.1-16.bradbury1) bradbury; urgency=low
+
+  * Build for bradbury
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Sat, 10 Jul 2010 20:10:09 +0200
+
 uk (0.1-16) zelazny; urgency=low
 
   * Change ecore_con service path
