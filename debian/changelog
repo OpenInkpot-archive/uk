@@ -1,3 +1,9 @@
+uk (0.1-16) zelazny; urgency=low
+
+  * Change ecore_con service path
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Sat, 10 Jul 2010 20:08:05 +0200
+
 uk (0.1-15) asimov; urgency=low
 
   * Add madaudio hotkey for N516.
