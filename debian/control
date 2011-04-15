@@ -1,6 +1,7 @@
 Source: uk
 Section: gui
 Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Uploaders: Alexander Kerner <lunohod@openinkpot.org>
 Build-Depends: debhelper (>= 7), automake, pkg-config, liblops-dev, libxcb1-dev, libxcb-event1-dev, libxcb-aux0-dev
 XCS-Cross-Host-Build-Depends: debhelper (>= 7), automake, pkg-config
 XCS-Cross-Build-Depends: liblops-dev, libxcb1-dev, libxcb-event1-dev, libxcb-aux0-dev
@@ -46,3 +47,13 @@ Description: micro-implementation of hotkeys for X -- Hanvon N516 keybindings
  instead of running them second time.
  .
  This package contains default keybindings for Hanvon N516.
+
+Package: uk-settings-eb600
+Priority: optional
+Architecture: all
+Description: micro-implementation of hotkeys for X -- Netronix EB600 keybindings
+ uKeys is a small hotkeying application for X, with additional
+ "dbus-services-like" functionality, allowing to signal running applications
+ instead of running them second time.
+ .
+ This package contains default keybindings for Netronix EB600.
