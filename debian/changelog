@@ -1,3 +1,9 @@
+uk (0.1-18) zelazny; urgency=low
+
+  * Add settings for prs505
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Sat, 10 Sep 2011 22:18:56 +0200
+
 uk (0.1-17) zelazny; urgency=low
 
   * Add settings for eb600
