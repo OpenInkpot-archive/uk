@@ -57,3 +57,13 @@ Description: micro-implementation of hotkeys for X -- Netronix EB600 keybindings
  instead of running them second time.
  .
  This package contains default keybindings for Netronix EB600.
+
+Package: uk-settings-prs505
+Priority: optional
+Architecture: all
+Description: micro-implementation of hotkeys for X -- Sony PRS505 keybindings
+ uKeys is a small hotkeying application for X, with additional
+ "dbus-services-like" functionality, allowing to signal running applications
+ instead of running them second time.
+ .
+ This package contains default keybindings for Sony PRS505.

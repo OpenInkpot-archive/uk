@@ -46,7 +46,7 @@ install: build
 	mkdir -p $(CURDIR)/debian/tmp/etc/X11/Xsession.d
 	cp debian/50uk $(CURDIR)/debian/tmp/etc/X11/Xsession.d
 
-	for i in v3 n516 eb600; do \
+	for i in v3 n516 eb600 prs505; do \
 		mkdir -p $(CURDIR)/debian/uk-settings-$$i/etc; \
 		cp $(CURDIR)/debian/$$i.conf $(CURDIR)/debian/uk-settings-$$i/etc/uk.conf; \
 	done
